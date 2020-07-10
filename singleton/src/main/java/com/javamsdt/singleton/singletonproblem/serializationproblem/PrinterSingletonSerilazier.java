@@ -50,12 +50,14 @@ public class PrinterSingletonSerilazier implements Serializable {
 	/**
 	 * If you removed this method so everytime you deserialize that instance you
 	 * will be creating a new instance to test, comment then run the Runner class in
-	 * the same package to see the differences in the HashCode. 
-	 * This method responsible of deserializing the same instance object not a new one
+	 * the same package to see the differences in the HashCode. This method
+	 * responsible of deserializing the same instance object not a new one
 	 * 
 	 * @return the only created instance object
 	 */
+
 	protected Object readResolve() {
 		return getInstance();
 	}
+
 }

@@ -10,6 +10,7 @@ public class Runner {
 				.getInstance();
 
 		PrinterInstanceInitializerSingletonReflection singletonReflectionReflection = null;
+
 		try {
 			Constructor<?>[] constructors = PrinterInstanceInitializerSingletonReflection.class
 					.getDeclaredConstructors();
